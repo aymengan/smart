@@ -60,7 +60,7 @@
             <div class="navbar">
                 <div class="navbar-inner">
 					<div class="left theme-black">
-                        <a href="#" class="link"><i class="f7-icons ">person</i>&nbsp Dr. Tillman</a>
+                        <a href="#" class="link"><i class="f7-icons ">person</i>&nbsp L. Müller</a>
                     </div>
                     <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
                     <div class="center sliding"><img src="logo_short.png" style="height: 30px;"></div>
@@ -76,57 +76,96 @@
             <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
             <div class="pages navbar-through toolbar-through">
                 <!-- Page, "data-page" contains page name -->
-                <div data-page="patient" class="page">
+                <div data-page="index" class="page">
                     <!-- Scrollable page content -->
                     <div class="page-content">
                         <div class="content-block">
-							<div class="content-block">
-							  <div class="content-block-inner">
-								<img src="male.png">
-			<div style="float: right;">
-			
-				<p>Alter - 57 Jahre</br>Gewicht - 86 Kg</br>Körpergröße - 1.83cm</p>
-				<p><a href="task.html" class="external button button-round">Neue Aufgabe</a></p>
-			</div>
-			<h1>Jonas Neumann</h1>
-			<p>Station A01</br>Zimmer 01</p>
-			
-							  </div>
-							</div>
-                        </div>
-                    </div>
-					<div class="toolbar tabbar tabbar-labels">
-						<div class="toolbar-inner">
-							<a href="doctor.html" class="link" data-tab=".tab1">
-								<i class="f7-icons">home_fill</i>
-								<span class="tabbar-label active">Startseite</span>
-							</a>
-							<a href="" class="link active" data-tab=".tab2">
-								<i class="f7-icons">
-									persons
-								</i>
-								<span class="tabbar-label">Patient: A01-01</span>
-							</a>
-							<a href="doctor_tasks.html" class="link" data-tab=".tab3">
-								<i class="f7-icons">
-									list
-								</i>
-								<span class="tabbar-label">Aufgaben</span>
-							</a>
-							<a href="doctor_dashboard.html" class="link" data-tab=".tab4">
-								<i class="f7-icons">graph_round</i>
-								<span class="tabbar-label">Dashboard</span>
-							</a><a href="team.html" class="link" data-tab=".tab5">
-								<i class="f7-icons">world</i>
-								<span class="tabbar-label">Team</span>
-							</a>
+							<div class="timeline">
+  <!-- Timeline item -->
+  <div class="timeline-item">
+    <div class="timeline-item-date">21 <small>DEC</small></div>
+    <div class="timeline-item-divider"></div>
+    <div class="timeline-item-content">Plain text item</div>
+  </div>
+  <!-- Timeline item with inner -->
+  <div class="timeline-item">
+    <div class="timeline-item-date">22 <small>DEC</small></div>
+    <div class="timeline-item-divider"></div>
+    <div class="timeline-item-content">
+      <div class="timeline-item-inner">Another text goes here</div>
+    </div>
+  </div>
+  <!-- Timeline item with special timeline elements -->
+  <div class="timeline-item">
+    <div class="timeline-item-date">23 <small>DEC</small></div>
+    <div class="timeline-item-divider"></div>
+    <div class="timeline-item-content">
+      <div class="timeline-item-time">12:33</div>
+      <div class="timeline-item-title">Item Title</div>
+      <div class="timeline-item-subtitle">Item Subtitle</div>
+      <div class="timeline-item-text">Item Text</div>
+    </div>
+  </div>
+  <!-- Timeline item with special timeline elements and inner -->
+  <div class="timeline-item">
+    <div class="timeline-item-date">24 <small>DEC</small></div>
+    <div class="timeline-item-divider"></div>
+    <div class="timeline-item-content">
+      <div class="timeline-item-inner">
+        <div class="timeline-item-time">12:33</div>
+        ...
+      </div>
+    </div>
+  </div>
+  <!-- Timeline item with multiple events per day  -->
+  <div class="timeline-item">
+    <div class="timeline-item-date">25 <small>DEC</small></div>
+    <div class="timeline-item-divider"></div>
+    <div class="timeline-item-content">
+      <div class="timeline-item-time">12:33</div>
+      <div class="timeline-item-title">Item Title</div>
+      <div class="timeline-item-subtitle">Item Subtitle</div>
+      <div class="timeline-item-text">Item Text</div>
+      <div class="timeline-item-time">15:45</div>
+      <div class="timeline-item-title">Item Title</div>
+      <div class="timeline-item-subtitle">Item Subtitle</div>
+      <div class="timeline-item-text">Item Text</div>
+    </div>
+  </div>
+  <!-- Timeline item with multiple events (inners) per day -->
+  <div class="timeline-item">
+    <div class="timeline-item-date">26 <small>DEC</small></div>
+    <div class="timeline-item-divider"></div>
+    <div class="timeline-item-content">
+      <div class="timeline-item-inner">
+        <div class="timeline-item-time">12:33</div>
+        ...
+      </div>
+      <div class="timeline-item-inner">
+        <div class="timeline-item-time">15:45</div>
+        ...
+      </div>
+    </div>
+  </div>
+  <!-- Timeline item with Card -->
+  <div class="timeline-item">
+    <div class="timeline-item-date">27 <small>DEC</small></div>
+    <div class="timeline-item-divider"></div>
+    <div class="timeline-item-content card">
+      <div class="card-header">Card header</div>
+      <div class="card-content">
+        <div class="card-content-inner">Card content</div>
+      </div>
+      <div class="card-footer">Card footer</div>
+    </div>
+  </div>
+</div>
 						</div>
 					</div>
                 </div>
             </div>
         </div>
     </div>
-
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
     <script type="text/javascript" src="js/my-app.js"></script>

@@ -76,36 +76,116 @@
             <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
             <div class="pages navbar-through toolbar-through">
                 <!-- Page, "data-page" contains page name -->
-                <div data-page="patient" class="page">
+                <div data-page="index" class="page">
                     <!-- Scrollable page content -->
-                    <div class="page-content">
-                        <div class="content-block">
-							<div class="content-block">
-							  <div class="content-block-inner">
-								<img src="male.png">
-			<div style="float: right;">
-			
-				<p>Alter - 57 Jahre</br>Gewicht - 86 Kg</br>Körpergröße - 1.83cm</p>
-				<p><a href="task.html" class="external button button-round">Neue Aufgabe</a></p>
-			</div>
-			<h1>Jonas Neumann</h1>
-			<p>Station A01</br>Zimmer 01</p>
-			
+                    <div class="page-content contacts-content">
+						 <form data-search-list=".list-block-search" data-search-in=".item-title" class="searchbar searchbar-init">
+    <div class="searchbar-input">
+      <input type="search" placeholder="Suchen"><a href="#" class="searchbar-clear"></a>
+    </div><a href="#" class="searchbar-cancel">Zurück</a>
+  </form>
+  <div class="searchbar-overlay"></div>
+    <!-- This block will be displayed if nothing found -->
+    <div class="content-block searchbar-not-found">
+      <div class="content-block-inner">Nicht gefunden</div>
+    </div>
+						<div class="list-block contacts-block list-block-search searchbar-found">
+						<div class="list-group">
+						  <ul>
+							<li class="list-group-title">Ärzte</li>
+							<li>
+							  <div class="item-content">
+								<div class="item-media"><i class="f7-icons ">person</i></div>
+								<div class="item-inner">
+								  <div class="item-title">Dr. Alexander Tillmann</div>
+								  <!-- About popover -->
+
+								</div>
 							  </div>
-							</div>
-                        </div>
-                    </div>
+							</li>
+							<li>
+							  <div class="item-content">
+								<div class="item-media"><i class="f7-icons ">person</i></div>
+								<div class="item-inner">
+								  <div class="item-title">Dr. Ben Hoffmann</div>
+								  <a href="chat.html" class="button">Kontaktieren</a>
+								</div>
+							  </div>
+							</li>
+							<li>
+							  <div class="item-content">
+								<div class="item-media"><i class="f7-icons ">person</i></div>
+								<div class="item-inner">
+								  <div class="item-title">Dr. Clara Koch</div>
+								  <a href="chat.html" class="button">Kontaktieren</a>
+								</div>
+							  </div>
+							</li>
+							<li>
+							  <div class="item-content">
+								<div class="item-media"><i class="f7-icons ">person</i></div>
+								<div class="item-inner">
+								  <div class="item-title">Dr. Elisa Braun</div>
+								  <a href="chat.html" class="button">Kontaktieren</a>
+								</div>
+							  </div>
+							</li>
+						  </ul>
+						</div>
+						<div class="list-group">
+						  <ul>
+							<li class="list-group-title">Pflegepersonal</li>
+							<li>
+							  <div class="item-content">
+							  <div class="item-media"><i class="f7-icons ">person</i></div>
+								<div class="item-inner">
+								  <div class="item-title">Anna Albrecht</div>
+								  <a href="chat.html" class="button">Kontaktieren</a>
+								</div>
+							  </div>
+							</li>
+							<li>
+							  <div class="item-content">
+							  <div class="item-media"><i class="f7-icons ">person</i></div>
+								<div class="item-inner">
+								  <div class="item-title">Anton Ziegler</div>
+								  <a href="chat.html" class="button">Kontaktieren</a>
+								</div>
+							  </div>
+							</li>
+							<li>
+							  <div class="item-content">
+							  <div class="item-media"><i class="f7-icons ">person</i></div>
+								<div class="item-inner">
+								  <div class="item-title">Laura Müller</div>
+								  <a href="chat.html" class="button">Kontaktieren</a>
+								</div>
+							  </div>
+							</li>
+							<li>
+							  <div class="item-content">
+							  <div class="item-media"><i class="f7-icons ">person</i></div>
+								<div class="item-inner">
+								  <div class="item-title">Paul Jäger</div>
+								  <a href="chat.html" class="button">Kontaktieren</a>
+								</div>
+							  </div>
+							</li>
+						  </ul>
+						</div>
+					  </div>
+					</div>
 					<div class="toolbar tabbar tabbar-labels">
 						<div class="toolbar-inner">
 							<a href="doctor.html" class="link" data-tab=".tab1">
 								<i class="f7-icons">home_fill</i>
 								<span class="tabbar-label active">Startseite</span>
 							</a>
-							<a href="" class="link active" data-tab=".tab2">
+							<a href="doctor_patients.html" class="link" data-tab=".tab2">
 								<i class="f7-icons">
 									persons
 								</i>
-								<span class="tabbar-label">Patient: A01-01</span>
+								<span class="tabbar-label">Patiente</span>
 							</a>
 							<a href="doctor_tasks.html" class="link" data-tab=".tab3">
 								<i class="f7-icons">
@@ -116,7 +196,7 @@
 							<a href="doctor_dashboard.html" class="link" data-tab=".tab4">
 								<i class="f7-icons">graph_round</i>
 								<span class="tabbar-label">Dashboard</span>
-							</a><a href="team.html" class="link" data-tab=".tab5">
+							</a><a href="" class="link active" data-tab=".tab5">
 								<i class="f7-icons">world</i>
 								<span class="tabbar-label">Team</span>
 							</a>

@@ -69,32 +69,38 @@
                           Right link contains only icon - additional "icon-only" class
                           Additional "open-panel" class tells app to open panel when we click on this link
                         -->
-                        <a href="nurse_login.html" class="button button-round active"><i class="f7-icons">logout</i>Abmelden</a>
+                        <a href="#" class="button button-round active"><i class="f7-icons">logout</i>Abmelden</a>
                     </div>
                 </div>
             </div>
             <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
             <div class="pages navbar-through toolbar-through">
                 <!-- Page, "data-page" contains page name -->
-                <div data-page="index" class="page">
+                <div data-page="tasks" class="page">
                     <!-- Scrollable page content -->
                     <div class="page-content">
                         <div class="content-block">
-							<div class="content-block-title">Zugewiesen</div>
-							<div class="list-block">
+							<div class="content-block-title">Aufgabenliste</div>
+							<div class="list-block sortable">
 							  <ul>
 								<li class="accordion-item swipeout bg-red color-white">
 										<a href="#" class="item-content item-link">
 										  <div class="item-inner">
-											<div class="item-title"><i class="icon f7-icons">bell</i> Insulin spritzen!</div>
+											<div class="item-title">Aufgabe für <i class="icon f7-icons">person</i> Patient A01-02</div>
 										</div></a>
 										<div class="swipeout-content">
 											<div class="accordion-item-content">
 											<div class="content-block color-white">
-											  <p><i class="icon f7-icons">person</i> Patient A01-01 hat einen Notruf ausgelöst</p>
+											  <p>Insulin spritzen von <i class="icon f7-icons">person</i> Dr. Tillman </p>
 											</div>
 											</div>
 										</div>
+									<div class="swipeout-actions-left">
+									<a href="#" class="swipeout-delete swipeout-overswipe bg-blue">Fertig</a>
+								  </div>
+								  <div class="swipeout-actions-right">
+									<a href="#" class="bg-lightblue swipeout-overswipe forward">Bearbeiten</a>
+								  </div>
 								</li>
 								<li class="accordion-item swipeout bg-green color-white">
 										<a href="#" class="item-content item-link">
@@ -108,8 +114,16 @@
 											</div>
 											</div>
 										</div>
+									<div class="swipeout-actions-left">
+									<a href="#" class="swipeout-delete swipeout-overswipe bg-blue">Fertig</a>
+									<a href="#" class="bg-lightblue forward">Annehmen</a>
+								  </div>
+								  <div class="swipeout-actions-right">
+									<a href="#" class="swipeout-delete swipeout-overswipe bg-pink">Ablehnen</a>
+								  </div>
+								  <div class="sortable-handler"></div>
 								</li>
-								<li class="accordion-item swipeout bg-orange color-white">
+								<li class="accordion-item swipeout bg-yellow color-white">
 										<a href="#" class="item-content item-link">
 										  <div class="item-inner">
 											<div class="item-title">Aufgabe für <i class="icon f7-icons">person</i> Patient A01-01</div>
@@ -121,6 +135,14 @@
 											</div>
 											</div>
 										</div>
+									<div class="swipeout-actions-left">
+									<a href="#" class="swipeout-delete swipeout-overswipe bg-blue">Fertig</a>
+									<a href="#" class="bg-lightblue forward">Annehmen</a>
+								  </div>
+								  <div class="swipeout-actions-right">
+									<a href="#" class="swipeout-delete swipeout-overswipe bg-pink">Ablehnen</a>
+								  </div>
+								  <div class="sortable-handler"></div>
 								</li>
 								<li class="accordion-item swipeout">
 										<a href="#" class="item-content item-link">
@@ -134,144 +156,55 @@
 											</div>
 											</div>
 										</div>
-								</li>
-							  </ul>
-							</div>
-							<div class="content-block-title">in Bearbeitung</div>
-							<div class="list-block">
-							  <ul>
-								<li class="accordion-item swipeout bg-red color-white">
-										<a href="#" class="item-content item-link">
-										  <div class="item-inner">
-											<div class="item-title"><i class="icon f7-icons">bell</i> Notruf ausgelöst!</div>
-										</div></a>
-										<div class="swipeout-content">
-											<div class="accordion-item-content">
-											<div class="content-block color-white">
-											  <p><i class="icon f7-icons">person</i> Patient A01-01 hat einen Notruf ausgelöst</p>
-											</div>
-											</div>
-										</div>
-								</li>
-								<li class="accordion-item swipeout bg-green color-white">
-										<a href="#" class="item-content item-link">
-										  <div class="item-inner">
-											<div class="item-title">Aufgabe für <i class="icon f7-icons">person</i> Patient A01-01</div>
-										</div></a>
-										<div class="swipeout-content">
-											<div class="accordion-item-content">
-											<div class="content-block color-white">
-											  <p>Medikament geben: Ibuprofin von <i class="icon f7-icons">person</i> Dr. Tillman </p>
-											</div>
-											</div>
-										</div>
-								</li>
-								<li class="accordion-item swipeout bg-orange color-white">
-										<a href="#" class="item-content item-link">
-										  <div class="item-inner">
-											<div class="item-title">Aufgabe für <i class="icon f7-icons">person</i> Patient A01-01</div>
-										</div></a>
-										<div class="swipeout-content">
-											<div class="accordion-item-content">
-											<div class="content-block color-white">
-											  <p>Blutabnahme vor 12:15 Uhr <i class="icon f7-icons">person</i> Dr. Tillman </p>
-											</div>
-											</div>
-										</div>
-								</li>
-								<li class="accordion-item swipeout">
-										<a href="#" class="item-content item-link">
-										  <div class="item-inner">
-											<div class="item-title">Mittagsessen für <i class="icon f7-icons">persons</i> Patiente</div>
-										</div></a>
-										<div class="swipeout-content">
-											<div class="accordion-item-content">
-											<div class="content-block">
-											  <p>Mittagsessen für <i class="icon f7-icons">persons</i> Patiente A01-01 und A01-02 </p>
-											</div>
-											</div>
-										</div>
-								</li>
-							  </ul>
-							</div>
-							<div class="content-block-title">Fertig</div>
-							<div class="list-block">
-							  <ul>
-								<li class="accordion-item swipeout bg-red color-white">
-										<a href="#" class="item-content item-link">
-										  <div class="item-inner">
-											<div class="item-title"><i class="icon f7-icons">bell</i> Notruf ausgelöst!</div>
-										</div></a>
-										<div class="swipeout-content">
-											<div class="accordion-item-content">
-											<div class="content-block color-white">
-											  <p><i class="icon f7-icons">person</i> Patient A01-01 hat einen Notruf ausgelöst</p>
-											</div>
-											</div>
-										</div>
-								</li>
-								<li class="accordion-item swipeout bg-green color-white">
-										<a href="#" class="item-content item-link">
-										  <div class="item-inner">
-											<div class="item-title">Aufgabe für <i class="icon f7-icons">person</i> Patient A01-01</div>
-										</div></a>
-										<div class="swipeout-content">
-											<div class="accordion-item-content">
-											<div class="content-block color-white">
-											  <p>Medikament geben: Ibuprofin von <i class="icon f7-icons">person</i> Dr. Tillman </p>
-											</div>
-											</div>
-										</div>
-								</li>
-								<li class="accordion-item swipeout bg-orange color-white">
-										<a href="#" class="item-content item-link">
-										  <div class="item-inner">
-											<div class="item-title">Aufgabe für <i class="icon f7-icons">person</i> Patient A01-01</div>
-										</div></a>
-										<div class="swipeout-content">
-											<div class="accordion-item-content">
-											<div class="content-block color-white">
-											  <p>Blutabnahme vor 12:15 Uhr <i class="icon f7-icons">person</i> Dr. Tillman </p>
-											</div>
-											</div>
-										</div>
-								</li>
-								<li class="accordion-item swipeout">
-										<a href="#" class="item-content item-link">
-										  <div class="item-inner">
-											<div class="item-title">Mittagsessen für <i class="icon f7-icons">persons</i> Patiente</div>
-										</div></a>
-										<div class="swipeout-content">
-											<div class="accordion-item-content">
-											<div class="content-block">
-											  <p>Mittagsessen für <i class="icon f7-icons">persons</i> Patiente A01-01 und A01-02 </p>
-											</div>
-											</div>
-										</div>
+									<div class="swipeout-actions-left">
+									<a href="#" class="swipeout-delete swipeout-overswipe bg-blue">Fertig</a>
+									<a href="#" class="bg-lightblue forward">Annehmen</a>
+								  </div>
+								  <div class="swipeout-actions-right">
+									<a href="#" class="swipeout-delete swipeout-overswipe bg-pink">Ablehnen</a>
+								  </div>
+								  <div class="sortable-handler"></div>
 								</li>
 							  </ul>
 							</div>
 						</div>
+						<div class="row">
+							<div class="col-50"></div>
+						
+						<div class="col-50">
+						<div class="content-block">
+							<p>&nbsp Sortieren</p>
+							<p class="buttons-row">
+							  <a href="#" class="button active button-round close-sortable" data-sortable=".sortable" id="aus">Aus</a>
+							  <a href="#" class="button button-round open-sortable" data-sortable=".sortable" id="an">An</a></p>
+
+    </div>
+	</div>
+						  </div>
+						
                     </div>
 					<div class="toolbar tabbar tabbar-labels">
 						<div class="toolbar-inner">
-							<a href="doctor.html" class="link" data-tab=".tab1">
+							<a href="nurse.html" class="link" data-tab=".tab1">
 								<i class="f7-icons">home_fill</i>
 								<span class="tabbar-label">Startseite</span>
 							</a>
-							<a href="doctor_patients.html" class="link" data-tab=".tab2">
-								<i class="f7-icons">persons</i>
+							<a href="nurse_patients.html" class="link" data-tab=".tab2">
+								<i class="f7-icons">
+									persons
+								</i>
 								<span class="tabbar-label">Patiente</span>
 							</a>
-							<a href="" class="link active" data-tab=".tab3">
-								<i class="f7-icons">list</i>
+							<a href="nurse_tasks.html" class="link active" data-tab=".tab3">
+								<i class="f7-icons">
+									list
+								</i>
 								<span class="tabbar-label active">Aufgaben</span>
 							</a>
-							<a href="doctor_dashboard.html" class="link" data-tab=".tab4">
+							<a href="nurse_dashboard.html" class="link" data-tab=".tab4">
 								<i class="f7-icons">graph_round</i>
 								<span class="tabbar-label">Dashboard</span>
-							</a>
-							<a href="doctor_team.html" class="link" data-tab=".tab5">
+							</a><a href="nurse_team.html" class="link" data-tab=".tab5">
 								<i class="f7-icons">world</i>
 								<span class="tabbar-label">Team</span>
 							</a>
