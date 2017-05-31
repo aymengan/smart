@@ -24,14 +24,6 @@ $$(document).on('deviceready', function() {
 // Now we need to run the code that will be executed only for About page.
 
 // Option 1. Using page callback for page (for "about" page in this case) (recommended way):
-myApp.onPageInit('tasks', function (page) {
-   myApp.addNotification({
-        title: 'Framework7',
-        subtitle: 'Notification subtitle',
-        message: 'This is a simple notification message with custom icon and subtitle',
-        media: '<i class="icon icon-f7"></i>'
-    });
-})
 
 // Option 2. Using one 'pageInit' event handler for all pages:
 $$(document).on('pageInit', function (e) {
@@ -135,7 +127,4 @@ $$('.open-3-modal').on('click', function () {
       },
     ]
   })
-});
-$$('.reload-task').on('click', function () {
-  mainView.router.reloadPage(tasks.html)
 });
