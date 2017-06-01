@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Your app title -->
+    <title>My App</title>
+
+    <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
+        http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
+     -->
+
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
+	<link rel="stylesheet" href="css/framework7-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+	<style>
+		.size-22 { font-size: 22px }
+	.size-25 { font-size: 25px }
+	.size-29 { font-size: 29px }
+	.size-50 { font-size: 50px }
+	</style>
+</head>
+
+<body>
+    <!-- Status bar overlay for full screen mode (PhoneGap) -->
+    <div class="statusbar-overlay"></div>
+
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+        <div class="content-block">
+            <p>Left panel content goes here</p>
+        </div>
+    </div>
+
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Top Navbar-->
+            <div class="navbar">
+                <div class="navbar-inner">
+					<div class="left theme-black">
+                        <a href="#" class="link"><i class="f7-icons ">person</i>&nbsp Dr. Tillman</a>
+                    </div>
+                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                    <div class="center sliding"><img src="logo_short.png" style="height: 30px;"></div>
+                    <div class="right theme-black">
+                        <!--
+                          Right link contains only icon - additional "icon-only" class
+                          Additional "open-panel" class tells app to open panel when we click on this link
+                        -->
+                        <a href="#" class="button button-round active"><i class="f7-icons">logout</i>Abmelden</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages navbar-through toolbar-through">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="task" class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content">
+                        <div class="content-block">
+							<div class="content-block-title">Aufgabenvorschläge</div>
+							<div class="list-block">
+							  <ul>
+								<li class="swipeout">
+								  <div class="swipeout-content">
+									<a href="#" class="item-content item-link smart-select" data-searchbar="true" data-searchbar-placeholder="Medikament suchen" data-back-on-select="true">
+										<select name="medicament">
+											<option value="honda">Wählen</option>
+											<option value="lexus">Paracetamol</option>
+											<option value="mazda">Ibuprofin</option>
+											<option value="nissan">Mucosolvan</option>
+											<option value="toyota">Daflon</option>
+										</select>
+									  <div class="item-inner">
+										<div class="item-title-row">
+										  <div class="item-title">Medicament geben</div>
+										</div>
+										<div class="item-text "></div>
+									  </div>
+									</a>
+								  </div>
+								  <div class="swipeout-actions-left">
+									<a href="#" class="swipeout-delete swipeout-overswipe bg-green open-3-modal">Senden</a>
+								  </div>
+								  <div class="swipeout-actions-right">
+									<a href="#" class="swipeout-delete swipeout-overswipe">Löschen</a>
+								  </div>
+								</li>
+								<li class="swipeout">
+								  <div class="swipeout-content">
+									<a href="#" class="item-content item-link">
+									  <div class="item-inner">
+										<div class="item-title-row">
+										  <div class="item-title">Verbandwechsel</div>
+										</div>
+									  </div>
+									</a>
+								  </div>
+								  <div class="swipeout-actions-left">
+									<a href="#" class="swipeout-delete swipeout-overswipe bg-green reply">Senden</a>
+								  </div>
+								  <div class="swipeout-actions-right">
+									<a href="#" class="swipeout-delete swipeout-overswipe">Löschen</a>
+								  </div>
+								</li>
+								<li class="swipeout">
+								  <div class="swipeout-content">
+									<a href="#" class="item-content item-link smart-select" data-searchbar="true" data-searchbar-placeholder="Zeit Wählen" data-back-on-select="true">
+									  <select name="medicament">
+											<option value="zeit">Zeit Wählen</option>
+											<optgroup label="01">
+												<option value="11:15">01:15</option>
+												<option value="01:30">01:30</option>
+												<option value="01:45">01:45</option>
+											</optgroup>
+											<optgroup label="02">
+												<option value="02:15">02:15</option>
+												<option value="02:30">02:30</option>
+												<option value="02:45">02:45</option>
+											</optgroup>
+											<optgroup label="03">
+												<option value="03:15">03:15</option>
+												<option value="03:30">03:30</option>
+												<option value="03:45">03:45</option>
+											</optgroup>
+											<optgroup label="04">
+												<option value="04:15">04:15</option>
+												<option value="04:30">04:30</option>
+												<option value="04:45">04:45</option>
+											</optgroup>
+											<optgroup label="05">
+												<option value="05:15">05:15</option>
+												<option value="05:30">05:30</option>
+												<option value="05:45">05:45</option>
+											</optgroup>
+											<optgroup label="06">
+												<option value="06:15">06:15</option>
+												<option value="06:30">06:30</option>
+												<option value="06:45">06:45</option>
+											</optgroup>
+											<optgroup label="07">
+												<option value="07:15">07:15</option>
+												<option value="07:30">07:30</option>
+												<option value="07:45">07:45</option>
+											</optgroup>
+											<optgroup label="08">
+												<option value="08:15">08:15</option>
+												<option value="08:30">08:30</option>
+												<option value="08:45">08:45</option>
+											</optgroup>
+											<optgroup label="09">
+												<option value="09:15">09:15</option>
+												<option value="09:30">09:30</option>
+												<option value="09:45">09:45</option>
+											</optgroup>
+											<optgroup label="10">
+												<option value="10:15">10:15</option>
+												<option value="10:30">10:30</option>
+												<option value="10:45">10:45</option>
+											</optgroup>
+											<optgroup label="11">
+												<option value="11:15">11:15</option>
+												<option value="11:30">11:30</option>
+												<option value="11:45">11:45</option>
+											</optgroup>
+											<optgroup label="12">
+												<option value="12:15">12:15</option>
+												<option value="12:30">12:30</option>
+												<option value="12:45">12:45</option>
+											</optgroup>
+											<optgroup label="13">
+												<option value="13:15">13:15</option>
+												<option value="13:30">13:30</option>
+												<option value="13:45">13:45</option>
+											</optgroup>
+											<optgroup label="14">
+												<option value="14:15">14:15</option>
+												<option value="14:30">14:30</option>
+												<option value="14:45">14:45</option>
+											</optgroup>
+											<optgroup label="15">
+												<option value="honda">15:15</option>
+												<option value="lexus">15:30</option>
+												<option value="mazda">15:45</option>
+											</optgroup>
+											<optgroup label="16">
+												<option value="honda">16:15</option>
+												<option value="lexus">16:30</option>
+												<option value="mazda">16:45</option>
+											</optgroup>
+											<optgroup label="17">
+												<option value="honda">17:15</option>
+												<option value="lexus">17:30</option>
+												<option value="mazda">17:45</option>
+											</optgroup>
+											<optgroup label="18">
+												<option value="honda">18:15</option>
+												<option value="lexus">18:30</option>
+												<option value="mazda">18:45</option>
+											</optgroup>
+											<optgroup label="19">
+												<option value="honda">19:15</option>
+												<option value="lexus">19:30</option>
+												<option value="mazda">19:45</option>
+											</optgroup>
+											<optgroup label="20">
+												<option value="honda">20:15</option>
+												<option value="lexus">20:30</option>
+												<option value="mazda">20:45</option>
+											</optgroup>
+											<optgroup label="21">
+												<option value="honda">21:15</option>
+												<option value="lexus">21:30</option>
+												<option value="mazda">21:45</option>
+											</optgroup>
+											<optgroup label="22">
+												<option value="honda">22:15</option>
+												<option value="lexus">22:30</option>
+												<option value="mazda">22:45</option>
+											</optgroup>
+											<optgroup label="23">
+												<option value="honda">23:15</option>
+												<option value="lexus">23:30</option>
+												<option value="mazda">23:45</option>
+											</optgroup>
+										</select>
+									  <div class="item-inner">
+										<div class="item-title-row">
+										  <div class="item-title">Blutabnahme</div>
+										</div>
+									  </div>
+									</a>
+								  </div>
+								  <div class="swipeout-actions-left">
+									<a href="#" class="swipeout-delete swipeout-overswipe bg-green reply">Senden</a>
+								  </div>
+								  <div class="swipeout-actions-right">
+									<a href="#" class="swipeout-delete swipeout-overswipe">Löschen</a>
+								  </div>
+								</li>
+							  </ul>
+							</div>
+							<div class="content-block-title">Individuelle Aufgabe</div>
+							<div class="list-block">
+							  <ul>
+								<li class="swipeout">
+								  <div class="swipeout-content">
+									<a href="#" class="item-content item-link ">
+									<div class="item-media"><i class="icon f7-icons">compose</i></div>
+									  <div class="item-inner">
+										<div class="item-title-row">
+										  <div class="item-title"><div class="item-input">
+            <textarea placeholder="Aufgabe eingeben"></textarea>
+          </div></div>
+										</div>
+										<div class="item-text "></div>
+									  </div>
+									</a>
+								  </div>
+								  <div class="swipeout-actions-left">
+									<a href="#" class="swipeout-overswipe bg-green reply">Senden</a>
+								  </div>
+								  <div class="swipeout-actions-right">
+									<a href="#" class="swipeout-overswipe">Löschen</a>
+								  </div>
+								</li>
+							  </ul>
+							</div>
+                        </div>
+                    </div>
+					<div class="toolbar tabbar tabbar-labels">
+						<div class="toolbar-inner">
+							<a href="doctor.html" class="link" data-tab=".tab1">
+								<i class="f7-icons">home_fill</i>
+								<span class="tabbar-label active">Startseite</span>
+							</a>
+							<a href="" class="link active" data-tab=".tab2">
+								<i class="f7-icons">
+									persons
+								</i>
+								<span class="tabbar-label">Patient: A01-01</span>
+							</a>
+							<a href="doctor_tasks.html" class="link" data-tab=".tab3">
+								<i class="f7-icons">
+									list
+								</i>
+								<span class="tabbar-label">Aufgaben</span>
+							</a>
+							<a href="doctor_dashboard.html" class="link" data-tab=".tab4">
+								<i class="f7-icons">graph_round</i>
+								<span class="tabbar-label">Dashboard</span>
+							</a><a href="doctor_team.html" class="link" data-tab=".tab5">
+								<i class="f7-icons">world</i>
+								<span class="tabbar-label">Team</span>
+							</a>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+
+</html>

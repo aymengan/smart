@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <title>Swipeable Tabs </title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/css/framework7.ios.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/css/framework7.ios.colors.min.css">
+	  <link rel="stylesheet" href="css/framework7-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+   </head>
+   <body>
+      <div class="views">
+         <div class="view view-main">
+            <div class="pages navbar-fixed">
+               <div data-page="home" class="page with-subnavbar">
+                  <div class="navbar">
+                     <div class="navbar-inner">
+                        <div class="center">Smart InterStations</div>
+                     </div>
+                  </div>
+                  <div class="tabs-swipeable-wrap">
+                     <div class="tabs">
+                        <div id="tab1" class="page-content with-subnavbar tab active">
+                           <div class="content-block">
+							<div class="content-block-title">Smart InterStations</div>
+							<!-- Inset content block -->
+							<div class="content-block inset">
+							  <div class="content-block-inner">
+								<p><h1>Willkommen Dr. Tillman!</h1></br>Sie sind in der Startseite.</br>
+								Auf <a href="patients.html" class="-link"><i class="f7-icons">persons</i></a> Kommen Sie auf die Übersicht der Patiente.</br>
+								Auf <a href="#" class="link"><i class="f7-icons">graph_round</i></a> Kommen Sie auf Ihr Dashboad.</br></p>
+							  </div>
+							</div>
+                        </div>
+                        </div>
+                        <div id="tab2" class="page-content tab">
+                           <div class="content-block">
+							<div class="content-block-title">Patiente</div>
+							<div class="list-block media-list inset">
+							  <ul>
+								<li>
+								  <a href="patient.html" class="item-link item-content">
+									<div class="item-media"><img src="male_small.png"></div>
+									<div class="item-inner">
+									  <div class="item-title-row">
+										<div class="item-title">Max Mustermann</div>
+									  </div>
+									  <div class="item-subtitle">Station A01 - Zimmer 01</div>
+									</div>
+								  </a>
+								</li>
+								<li>
+								  <a href="patient.html" class="item-link item-content">
+									<div class="item-media"><img src="male_small.png"></div>
+									<div class="item-inner">
+									  <div class="item-title-row">
+										<div class="item-title">Max Mustermann</div>
+									  </div>
+									  <div class="item-subtitle">Station A01 - Zimmer 01</div>
+									</div>
+								  </a>
+								</li>
+								<li>
+								  <a href="patient.html" class="item-link item-content">
+									<div class="item-media"><img src="male_small.png"></div>
+									<div class="item-inner">
+									  <div class="item-title-row">
+										<div class="item-title">Max Mustermann</div>
+									  </div>
+									  <div class="item-subtitle">Station A01 - Zimmer 01</div>
+									</div>
+								  </a>
+								</li>
+								<li>
+								  <a href="patient.html" class="item-link item-content">
+									<div class="item-media"><img src="male_small.png"></div>
+									<div class="item-inner">
+									  <div class="item-title-row">
+										<div class="item-title">Max Mustermann</div>
+									  </div>
+									  <div class="item-subtitle">Station A01 - Zimmer 01</div>
+									</div>
+								  </a>
+								</li>
+							  </ul>
+							</div>
+							</div>
+                        </div>
+                        <div id="tab3" class="page-content tab">
+                           <div class="content-block">
+                              <p>This is tab 3 content</p>
+                              <p>Nulla gravida libero eget lobortis iaculis. In sed elit eu nibh adipiscing faucibus. Sed ac accumsan lacus. In ut diam quis turpis fringilla volutpat. In ultrices dignissim consequat. Cras pretium tortor et lorem condimentum posuere. Nulla facilisi. Suspendisse pretium egestas lacus ac laoreet. Mauris rhoncus quis ipsum quis tristique. Vivamus ultricies urna quis nunc egestas, in euismod turpis fringilla. Nam tellus massa, vehicula eu sapien non, dapibus tempor lorem. Fusce placerat orci arcu, eu dignissim enim porttitor vel. Nullam porttitor vel dolor sed feugiat. Suspendisse potenti. Maecenas ac mattis odio. Sed vel ultricies lacus, sed posuere libero.</p>
+                           </div>
+                        </div>
+						<div id="tab4" class="page-content tab">
+                           <div class="content-block">
+                              <p>This is tab 3 content</p>
+                              <p>Nulla gravida libero eget lobortis iaculis. In sed elit eu nibh adipiscing faucibus. Sed ac accumsan lacus. In ut diam quis turpis fringilla volutpat. In ultrices dignissim consequat. Cras pretium tortor et lorem condimentum posuere. Nulla facilisi. Suspendisse pretium egestas lacus ac laoreet. Mauris rhoncus quis ipsum quis tristique. Vivamus ultricies urna quis nunc egestas, in euismod turpis fringilla. Nam tellus massa, vehicula eu sapien non, dapibus tempor lorem. Fusce placerat orci arcu, eu dignissim enim porttitor vel. Nullam porttitor vel dolor sed feugiat. Suspendisse potenti. Maecenas ac mattis odio. Sed vel ultricies lacus, sed posuere libero.</p>
+                           </div>
+                        </div>
+						<div id="tab5" class="page-content tab">
+							<div class="content-block">
+                           <div class="page-content contacts-content">
+						 <form data-search-list=".list-block-search" data-search-in=".item-title" class="searchbar searchbar-init">
+    <div class="searchbar-input">
+      <input type="search" placeholder="Suchen"><a href="#" class="searchbar-clear"></a>
+    </div><a href="#" class="searchbar-cancel">Zurück</a>
+  </form>
+  <div class="searchbar-overlay"></div>
+    <!-- This block will be displayed if nothing found -->
+    <div class="content-block searchbar-not-found">
+      <div class="content-block-inner">Nicht gefunden</div>
+    </div>
+						<div class="list-block contacts-block list-block-search searchbar-found">
+						<div class="list-group">
+						  <ul>
+							<li class="list-group-title">Ärzte</li>
+							<li>
+							  <div class="item-content">
+								<div class="item-media"><i class="f7-icons ">person</i></div>
+								<div class="item-inner">
+								  <div class="item-title">Dr. Alexander Tillmann</div>
+									<a href="chat.html" class="button">Kontaktieren</a>
+								  <!-- About popover -->
+
+								</div>
+							  </div>
+							</li>
+							<li>
+							  <div class="item-content">
+								<div class="item-media"><i class="f7-icons ">person</i></div>
+								<div class="item-inner">
+								  <div class="item-title">Dr. Ben Hoffmann</div>
+								  <a href="chat.html" class="button">Kontaktieren</a>
+								</div>
+							  </div>
+							</li>
+							<li>
+							  <div class="item-content">
+								<div class="item-media"><i class="f7-icons ">person</i></div>
+								<div class="item-inner">
+								  <div class="item-title">Dr. Clara Koch</div>
+								  <a href="chat.html" class="button">Kontaktieren</a>
+								</div>
+							  </div>
+							</li>
+							<li>
+							  <div class="item-content">
+								<div class="item-media"><i class="f7-icons ">person</i></div>
+								<div class="item-inner">
+								  <div class="item-title">Dr. Elisa Braun</div>
+								  <a href="chat.html" class="button">Kontaktieren</a>
+								</div>
+							  </div>
+							</li>
+						  </ul>
+						</div>
+						<div class="list-group">
+						  <ul>
+							<li class="list-group-title">Pflegepersonal</li>
+							<li>
+							  <div class="item-content">
+							  <div class="item-media"><i class="f7-icons ">person</i></div>
+								<div class="item-inner">
+								  <div class="item-title">Anna Albrecht</div>
+								  <a href="chat.html" class="button">Kontaktieren</a>
+								</div>
+							  </div>
+							</li>
+							<li>
+							  <div class="item-content">
+							  <div class="item-media"><i class="f7-icons ">person</i></div>
+								<div class="item-inner">
+								  <div class="item-title">Anton Ziegler</div>
+								  <a href="chat.html" class="button">Kontaktieren</a>
+								</div>
+							  </div>
+							</li>
+							<li>
+							  <div class="item-content">
+							  <div class="item-media"><i class="f7-icons ">person</i></div>
+								<div class="item-inner">
+								  <div class="item-title">Laura Müller</div>
+								  <a href="chat.html" class="button">Kontaktieren</a>
+								</div>
+							  </div>
+							</li>
+							<li>
+							  <div class="item-content">
+							  <div class="item-media"><i class="f7-icons ">person</i></div>
+								<div class="item-inner">
+								  <div class="item-title">Paul Jäger</div>
+								  <a href="chat.html" class="button">Kontaktieren</a>
+								</div>
+							  </div>
+							</li>
+						  </ul>
+						</div>
+					  </div>
+					  </div>
+					  </div>
+                        </div>
+                     </div>
+                  </div>
+				  <div class="toolbar tabbar tabbar-labels">
+						<div class="toolbar-inner">
+							<a href="#tab1" class="tab-link active" data-tab=".tab1">
+								<i class="f7-icons">home_fill</i>
+								<span class="tabbar-label active">Startseite</span>
+							</a>
+							<a href="#tab2" class="tab-link" data-tab=".tab2">
+								<i class="f7-icons">
+									persons
+								</i>
+								<span class="tabbar-label">Patiente</span>
+							</a>
+							<a href="#tab3" class="tab-link" data-tab=".tab3">
+								<i class="f7-icons">
+									list
+								</i>
+								<span class="tabbar-label">Aufgaben</span>
+							</a>
+							<a href="#tab4" class="tab-link" data-tab=".tab4">
+								<i class="f7-icons">graph_round</i>
+								<span class="tabbar-label">Dashboard</span>
+							</a><a href="#tab5" class="tab-link" data-tab=".tab5">
+								<i class="f7-icons">world</i>
+								<span class="tabbar-label">Team</span>
+							</a>
+						</div>
+					</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/js/framework7.min.js"></script>
+      <script>
+         // here initialize the app
+         var myApp = new Framework7();
+
+         // If your using custom DOM library, then save it to $$ variable
+         var $$ = Dom7;
+
+         // Add the view
+         var mainView = myApp.addView('.view-main', {
+         // enable the dynamic navbar for this view:
+         dynamicNavbar: true
+         });
+      </script>
+   </body>
+</html>
